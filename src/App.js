@@ -10,8 +10,7 @@ function App() {
   function getRandomQuote() {
     let number = Math.floor(Math.random() * COLORS_ARRAY.length);
     setCurrentColor(COLORS_ARRAY[number])
-    //setQuote(quoteArray[number].quote)
-    //setAuthor(quoteArray[number].author)
+    
     fetch("https://api.quotable.io/random") 
     .then((response) => response.json())   
      .then((data)=>{
